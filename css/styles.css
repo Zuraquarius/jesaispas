@@ -1,0 +1,205 @@
+/** Ce style est cadeau ;-) */
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { font-size: 62.5%; }
+
+.header { margin-bottom: 10px;
+        text-align: center;
+          
+
+}
+
+.header-logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.header-toogle { display: none;
+    
+}
+
+.header-menu a {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.6rem;
+    color:#202020;
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.header-menu a:hover {
+    background-color: #202020;
+    color: white;
+}
+
+
+
+.short-text {
+    text-align: center;
+    background-color: #eee;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.short-text p {
+    font-size:1.8rem;
+    line-height: : 1.7;
+    max-width: 700px;
+    margin: auto;
+}
+
+banner{
+   position: relative; /* relative mais ne bouge pas, elle reste donc à la place qui était prévue */
+  height: 700px; 
+  overflow: hidden;   /* on veut pas afficher plus que les 700px */
+  display : flex;     /* Les 3 lignes suivantes permettent de centrer le enfants horizontalement et verticalement */
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-desc{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.banner-desc h1 {
+    font-family: Reenie Beanie;
+    font-size: 8rem;
+    line-height: 1;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.banner-video{
+    position: absolute;
+    z-index: 0;
+    width: 1920px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+}
+
+.banner-video-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0,5);
+    z-index: 1;
+}
+
+.title-like{
+  font-family: 'Reenie Beanie', Arial, sans-serif;
+  line-height: 1.1; /* pas d'unité car c'est un multiplicateur */
+  font-weight: 400; /* font-weight: normal; */
+  /*font-weight: bold; ==> 700 */
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 25px;
+
+  border-width: 2px;
+  border-style: solid;
+
+
+  font-weight: normal;
+  text-transform: uppercase;
+  
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  font-size: 1.6rem; 
+}
+
+ .btn:hover{
+    text-decoration: none;
+  }
+  
+  
+  .btn .btn-white{
+    /* element .btn-white qui se trouve DANS un element .btn **/
+  }
+
+  .btn.btn-white{
+    /* element .btn qui dispose AUSSI de la classe .btn-white : c'est pas pareil !*/
+    color:white;
+    border-color:white;
+  }
+
+
+  .btn.btn-white:hover{
+    color:#555;
+    background-color:white;
+  }
+.three-women-item {
+   padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Reenie Beanie';
+    flex-grow: 1;
+}
+
+.three-women-item img{
+    position: relative;
+  width: 100%; 
+  transition:  transform 500ms; 
+  transform: translate3d(0,0,0) scale(1.15);
+}
+
+.three-women-item:hover img{
+  transform: translate3d(0,0,0) scale(1.05);
+}
+
+.three-women > div {
+    display: flex;
+}
+
+three-women-item figcaption {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+three-women-item figcaption span {
+    border: 1px solid white;
+    margin-bottom: 30px;
+    font-size: 2rem; 
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    text-decoration: :none;
+    
+}
+
+
+
+.title-like {
+    font-size: : 5rem;
+}
+
+
+ .text-hide {
+         font: 0/0 a;
+         color: transparent;
+         text-shadow: none;
+         background-color: transparent;
+         border: 0;
+}
